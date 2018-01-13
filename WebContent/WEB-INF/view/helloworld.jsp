@@ -7,10 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h3>Hello World to the Spring MVC!</h3>
+	<h3>Hello World to the Spring MVC!</h3>
 
-<br/>
+	<br/>
 
-Student Name: ${param.Name}
+	Student Name: ${param.Name}
+	<br/>
+	
+	The Message: ${message}
 </body>
 </html>
