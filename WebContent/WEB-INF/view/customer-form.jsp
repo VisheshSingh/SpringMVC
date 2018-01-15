@@ -11,8 +11,8 @@
 </head>
 <body>
 
-<em>Fill out the form. (*) means required.</em>
-	<form:form action="processForm" modelAttribute="Customer">
+<i>Fill out the form. (*) means required.</i>
+	<form:form action="processForm" modelAttribute="customer">
 	
 		First Name: <form:input path="firstName" />
 		<br><br>
