@@ -30,15 +30,16 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
+	@NotNull(message = "is required")
 	@Min(value = 0, message = "Enter a greater than 0")
 	@Max(value = 10, message = "Enter a less than or equal to 10")
-	private int freePasses;
+	private Integer freePasses;
 
-	public int getFreePasses() {
+	public Integer getFreePasses() {
 		return freePasses;
 	}
 
-	public void setFreePasses(int freePasses) {
+	public void setFreePasses(Integer freePasses) {
 		this.freePasses = freePasses;
 	}
 
