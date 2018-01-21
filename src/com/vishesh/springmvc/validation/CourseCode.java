@@ -8,20 +8,21 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-@Constraint(validatedBy = "CourseCodeConstraintValidator.class")
+@Constraint(validatedBy = CourseCodeConstraintValidator.class)
 @Target({ ElementType.METHOD, ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CourseCode {
 
 	// define default course code
-	public String value() default "VTS";
+	public String value() default "VT";
 
 	// define default error message
-	public String message() default "must begin with VTS";
+	public String message() default "must begin with VT";
 
 	// define default groups
 	public Class<?>[] groups() default {};
 
 	// define default payloads
 	public Class<? extends Payload>[] payload() default {};
+
 }
