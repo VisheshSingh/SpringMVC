@@ -56,7 +56,7 @@ public class Customer {
 		this.postalCode = postalCode;
 	}
 
-	@CourseCode
+	@CourseCode(value = "Cool", message = "must start with Cool")
 	public String courseCode;
 
 	public String getCourseCode() {
